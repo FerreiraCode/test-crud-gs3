@@ -3,6 +3,7 @@ package com.example.testcrudgs3;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.KeyNotifier;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -28,6 +29,8 @@ public class FuncionarioEditor extends VerticalLayout implements KeyNotifier {
 	TextField telefone = new TextField("Telefones");
 	TextField endereco = new TextField("Endereço");
 	TextField email = new TextField("E-mail");
+	
+
 
 
 

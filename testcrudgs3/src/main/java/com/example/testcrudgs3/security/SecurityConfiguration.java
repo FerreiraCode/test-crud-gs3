@@ -97,4 +97,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         "/h2-console/**");
   }
 
+  
+  
 }

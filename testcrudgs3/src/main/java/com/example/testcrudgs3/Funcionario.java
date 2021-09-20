@@ -3,6 +3,7 @@ package com.example.testcrudgs3;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -16,7 +17,7 @@ public class Funcionario {
 	@GeneratedValue
 	private Long id;
 	
-	@NotNull
+	@NotEmpty
 	@Size(min = 3, max = 100)
 	private String nome;
 
@@ -26,6 +27,8 @@ public class Funcionario {
 	
 	private String telefone;
 	
+	 @NotEmpty
+	 @Email(message = "${validatedValue} is not a valid email")
 	private String email;
 	
 	
